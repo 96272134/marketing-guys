@@ -58,8 +58,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
   };
 
   return (
-    <section id="services" className="py-20 bg-white relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-16 sm:py-20 bg-white relative overflow-hidden w-full max-w-full">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header matching the reference */}
         <div className="text-center max-w-3xl mx-auto mb-14">
@@ -67,7 +67,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             OUR SERVICES
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading mb-4">
-           Complete Digital Marketing, Powered by AI & Built for Growth
+            Complete Digital Marketing Solutions
           </h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-slate-600 text-base sm:text-lg">

@@ -79,7 +79,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed pr-4">
-              We are a result-driven digital marketing agency helping ambitious businesses, eCommerce brands, and B2B enterprises scale revenue predictably online.
+              We are a result-driven digital marketing agency helping ambitious businesses, Ecommerce brands, and B2B enterprises scale revenue predictably online.
             </p>
 
             {/* Social Icons row with real handles */}

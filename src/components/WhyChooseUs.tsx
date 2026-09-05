@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
   UserCheck, 
   Target, 
@@ -12,7 +12,7 @@ import {
   ShieldCheck,
   CheckCircle2
 } from 'lucide-react';
-import { WHY_CHOOSE_US, STATS_RIBBON, AGENCY_INFO } from '../data/marketingData';
+import { WHY_CHOOSE_US, STATS_RIBBON } from '../data/marketingData';
 
 interface WhyChooseUsProps {
   onOpenAboutModal: () => void;
@@ -21,10 +21,8 @@ interface WhyChooseUsProps {
 
 export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ 
   onOpenAboutModal,
-  onOpenConsultation 
+  onOpenConsultation: _onOpenConsultation
 }) => {
-  const [activeTab, setActiveTab] = useState<number>(0);
-
   const getPillarIcon = (iconName: string) => {
     switch (iconName) {
       case 'UserCheck': return <UserCheck className="w-8 h-8 text-blue-600" />;
@@ -46,15 +44,15 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   };
 
   return (
-    <section id="why-choose-us" className="py-20 bg-slate-50 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="why-choose-us" className="py-16 sm:py-20 bg-slate-50 relative overflow-hidden w-full max-w-full">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Top 2-Column Layout matching the reference */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-12 sm:mb-16">
           
           {/* Left Column: Heading, Description & Button */}
-          <div className="lg:col-span-5 space-y-6 text-left">
-            <div className="text-xs font-bold uppercase tracking-widest text-blue-600">
+          <div className="lg:col-span-5 space-y-6 text-center md:text-left px-2 sm:px-4 md:px-0">
+            <div className="inline-block text-xs font-bold uppercase tracking-widest text-blue-600">
               WHY CHOOSE US
             </div>
             
@@ -62,26 +60,26 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
               We Deliver Results That Drive Your Business Growth
             </h2>
 
-            <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
+            <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
               We use data, creativity and strategy to grow your brand and maximize your ROI. Every campaign is meticulously planned, monitored, and scaled with a scientific approach.
             </p>
 
-            <div className="space-y-3 pt-2">
-              <div className="flex items-center gap-3 text-slate-800 text-sm font-medium">
-                <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+            <div className="space-y-3 pt-2 text-left max-w-md mx-auto md:mx-0">
+              <div className="flex items-start sm:items-center gap-3 text-slate-800 text-sm font-medium">
+                <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5 sm:mt-0" />
                 <span>Zero vanity metrics — 100% focused on pipeline & revenue</span>
               </div>
-              <div className="flex items-center gap-3 text-slate-800 text-sm font-medium">
-                <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+              <div className="flex items-start sm:items-center gap-3 text-slate-800 text-sm font-medium">
+                <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5 sm:mt-0" />
                 <span>No long-term locked contracts — month-to-month flexibility</span>
               </div>
-              <div className="flex items-center gap-3 text-slate-800 text-sm font-medium">
-                <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0" />
+              <div className="flex items-start sm:items-center gap-3 text-slate-800 text-sm font-medium">
+                <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5 sm:mt-0" />
                 <span>Direct access to Senior Strategists on dedicated Slack channels</span>
               </div>
             </div>
 
-            <div className="pt-4">
+            <div className="pt-4 flex justify-center md:justify-start">
               <button 
                 id="why-choose-know-more-btn"
                 onClick={onOpenAboutModal}
@@ -94,8 +92,8 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
           </div>
 
           {/* Right Column: 2x2 Feature Grid */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {WHY_CHOOSE_US.map((item, idx) => (
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 w-full">
+            {WHY_CHOOSE_US.map((item) => (
               <div
                 key={item.id}
                 className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-200 flex flex-col items-center sm:items-start text-center sm:text-left group"
@@ -116,27 +114,25 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
         </div>
 
         {/* Bottom Full-Width Stats Ribbon with Deep Navy Bar */}
-        <div className="w-full bg-[#0d1b3e] text-white rounded-3xl p-8 sm:p-10 shadow-xl border border-blue-900/40 relative overflow-hidden">
+        <div className="w-full max-w-6xl mx-auto bg-[#0d1b3e] text-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl border border-blue-900/40 relative overflow-hidden">
           
           {/* Subtle background glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
           
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 divide-y sm:divide-y-0 sm:divide-x divide-blue-800/40">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {STATS_RIBBON.map((stat, idx) => (
               <div 
                 key={idx} 
-                className={`flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left ${idx > 0 ? 'pt-6 sm:pt-0 sm:pl-6' : ''}`}
+                className="flex flex-col items-center justify-center text-center p-3 sm:p-4 rounded-2xl bg-white/[0.03] border border-white/[0.06] sm:border-transparent sm:bg-transparent"
               >
-                <div className="w-14 h-14 rounded-2xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-blue-900/50 border border-blue-700/50 flex items-center justify-center shrink-0 mb-3 shadow-inner">
                   {getStatIcon(stat.icon)}
                 </div>
-                <div>
-                  <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight font-heading">
-                    {stat.value}
-                  </div>
-                  <div className="text-xs sm:text-sm font-medium text-blue-200 mt-0.5">
-                    {stat.label}
-                  </div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight font-heading">
+                  {stat.value}
+                </div>
+                <div className="text-xs sm:text-sm font-medium text-blue-200 mt-1 leading-snug">
+                  {stat.label}
                 </div>
               </div>
             ))}

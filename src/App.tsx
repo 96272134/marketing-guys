@@ -75,7 +75,7 @@ export default function App() {
       />
 
       {/* 2. Main Content Sections */}
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         {/* Hero Section */}
         <HeroSection 
           onOpenConsultation={() => {
