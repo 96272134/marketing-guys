@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <!-- Primary Blue Gradients (3D Facets) -->
+    <linearGradient id="blue-facet-main" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="60%" stop-color="#0052D4" />
+      <stop offset="100%" stop-color="#00359E" />
+    </linearGradient>
+
+    <linearGradient id="blue-facet-light" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#2B8CFF" />
+      <stop offset="100%" stop-color="#005BEA" />
+    </linearGradient>
+
+    <linearGradient id="blue-facet-dark" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0041B3" />
+      <stop offset="100%" stop-color="#002166" />
+    </linearGradient>
+
+    <linearGradient id="blue-facet-bottom" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#002D80" />
+      <stop offset="100%" stop-color="#0052D4" />
+    </linearGradient>
+
+    <!-- Silver Metallic Gradients for G -->
+    <linearGradient id="silver-metal-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#F1F5F9" />
+      <stop offset="70%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <linearGradient id="silver-metal-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#CBD5E1" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+
+    <linearGradient id="silver-metal-shadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Chart Bars Gradient -->
+    <linearGradient id="chart-bar-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0080FF" />
+      <stop offset="100%" stop-color="#0047BA" />
+    </linearGradient>
+
+    <!-- Arrow Gradient -->
+    <linearGradient id="arrow-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#005BEA" />
+      <stop offset="100%" stop-color="#0084FF" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter for Realistic 3D Depth -->
+    <filter id="logo-depth-shadow" x="-10%" y="-10%" width="125%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0B2B67" flood-opacity="0.16" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08" />
+    </filter>
+
+    <filter id="soft-inner-shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00184A" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- ==================== EMBLEM: MG 3D MONOGRAM ==================== -->
+  <g filter="url(#logo-depth-shadow)">
+
+    <!-- ========== LETTER M ========== -->
+    <!-- M: Left Outer Vertical Wing (Dark Bevel Edge) -->
+    <path d="M 276 72 L 312 72 L 312 230 L 276 230 Z" fill="url(#blue-facet-dark)" />
+    
+    <!-- M: Left Column Face (Light Royal Blue) -->
+    <path d="M 276 72 L 356 174 L 356 232 L 312 232 L 312 72 Z" fill="url(#blue-facet-main)" />
+
+    <!-- M: Right Diagonal Peak (Sharp Rising Peak towards Top Center) -->
+    <path d="M 356 174 L 468 64 L 496 90 L 396 232 L 356 232 Z" fill="url(#blue-facet-light)" />
+    
+    <!-- M: Center Cleft Shadow / Inner Slope -->
+    <path d="M 356 174 L 418 204 L 396 232 L 356 232 Z" fill="url(#blue-facet-dark)" />
+
+    <!-- M: Lower Base Support Block Behind G -->
+    <path d="M 396 190 L 452 190 L 452 232 L 396 232 Z" fill="url(#blue-facet-bottom)" />
+
+
+    <!-- ========== ANALYTICS BAR CHART (Inside Lower M) ========== -->
+    <!-- Bar 1 (Leftmost, Shortest) -->
+    <rect x="282" y="206" width="14" height="24" rx="2" fill="url(#chart-bar-grad)" stroke="#FFFFFF" stroke-width="1.5" />
+    
+    <!-- Bar 2 (Middle) -->
+    <rect x="300" y="190" width="14" height="40" rx="2" fill="url(#chart-bar-grad)" stroke="#FFFFFF" stroke-width="1.5" />
+    
+    <!-- Bar 3 (Rightmost, Tallest) -->
+    <rect x="318" y="174" width="14" height="56" rx="2" fill="url(#chart-bar-grad)" stroke="#FFFFFF" stroke-width="1.5" />
+
+
+    <!-- ========== ASCENDING GROWTH SWOOSH ARROW ========== -->
+    <!-- Upward curved dynamic swoosh starting from left base and pointing up-right into M -->
+    <path d="M 262 218 C 262 218 274 246 348 244 C 388 242 422 218 438 190 L 426 190 L 444 174 L 444 196 L 434 192 C 418 220 384 248 344 248 C 274 248 262 218 262 218 Z" 
+          fill="url(#arrow-grad)" stroke="#FFFFFF" stroke-width="1.2" />
+
+    <!-- Arrowhead -->
+    <path d="M 426 182 L 445 170 L 443 194 L 434 189 Z" fill="url(#blue-facet-light)" stroke="#FFFFFF" stroke-width="1.2" />
+
+
+    <!-- ========== LETTER G (3D Metallic Silver & Royal Blue) ========== -->
+    
+    <!-- G: Metallic Silver Upper Arc (Beveled Top Curve) -->
+    <path d="M 454 84 C 496 52 558 58 596 92 C 612 106 620 124 624 142 L 576 156 C 574 144 568 132 556 122 C 534 104 498 106 476 126 C 460 142 452 164 454 186 C 442 164 438 116 454 84 Z" 
+          fill="url(#silver-metal-top)" />
+
+    <!-- G: Metallic Silver Highlight Rim -->
+    <path d="M 454 84 C 496 52 558 58 596 92 L 588 98 C 554 68 498 62 460 92 Z" 
+          fill="#FFFFFF" opacity="0.9" />
+
+    <!-- G: Metallic Silver Inner Core Bevel -->
+    <path d="M 476 126 C 498 106 534 104 556 122 C 568 132 574 144 576 156 L 562 160 C 558 148 550 138 540 130 C 522 116 492 118 474 136 Z" 
+          fill="url(#silver-metal-bevel)" />
+
+    <!-- G: Blue Lower Body & Hook (Interlocking with Silver) -->
+    <path d="M 454 186 C 458 214 480 238 514 244 C 554 250 594 236 618 206 C 628 194 632 180 634 164 L 542 164 L 542 184 L 594 184 C 586 204 564 218 538 218 C 508 218 486 198 480 172 C 480 172 456 172 454 186 Z" 
+          fill="url(#blue-facet-main)" />
+
+    <!-- G: Blue Crossbar (Sharp 3D Facet) -->
+    <path d="M 542 164 L 634 164 L 634 184 L 542 184 Z" fill="url(#blue-facet-light)" />
+
+    <!-- G: Lower Swooping Blue Tail/Bevel -->
+    <path d="M 514 244 C 554 250 594 236 618 206 L 608 198 C 586 224 550 236 514 230 Z" fill="url(#blue-facet-dark)" />
+  </g>
+
+  <!-- ==================== TYPOGRAPHY SECTION ==================== -->
+  
+  <!-- "MARKETING GUYS" (Bold, Navy, Geometric Tracking) -->
+  <text x="400" y="284" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" 
+        font-size="34" 
+        font-weight="900" 
+        letter-spacing="4" 
+        fill="#0B2556">
+    MARKETING GUYS
+  </text>
+
+  <!-- Divider Line with Center Dot -->
+  <g transform="translate(0, 302)">
+    <!-- Left Line -->
+    <line x1="260" y1="0" x2="388" y2="0" stroke="#0B3A75" stroke-width="1.8" stroke-linecap="round" />
+    <!-- Center Dot -->
+    <circle cx="400" cy="0" r="3.5" fill="#0B3A75" />
+    <!-- Right Line -->
+    <line x1="412" y1="0" x2="540" y2="0" stroke="#0B3A75" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <!-- Tagline Line 1: "DIGITAL MARKETING SIMPLIFIED." -->
+  <text x="400" y="324" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" 
+        font-size="14.5" 
+        font-weight="800" 
+        letter-spacing="3" 
+        fill="#0B3A75">
+    DIGITAL MARKETING SIMPLIFIED.
+  </text>
+
+  <!-- Tagline Line 2: "STRATEGY. GROWTH. RESULTS." -->
+  <text x="400" y="344" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" 
+        font-size="12" 
+        font-weight="700" 
+        letter-spacing="4" 
+        fill="#334155">
+    STRATEGY. GROWTH. RESULTS.
+  </text>
+</svg>

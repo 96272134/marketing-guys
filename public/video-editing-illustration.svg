@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Soft background glow / vignette -->
+    <radialGradient id="editBgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#eff6ff" />
+      <stop offset="85%" stop-color="#dbeafe" />
+      <stop offset="100%" stop-color="#bfdbfe" />
+    </radialGradient>
+
+    <!-- Film Reel Frame Gradient -->
+    <linearGradient id="filmGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c7d2fe" />
+      <stop offset="100%" stop-color="#a5b4fc" />
+    </linearGradient>
+
+    <!-- Scissors Gradient -->
+    <linearGradient id="scissorBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <!-- Skin Tones -->
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#fdba74" />
+    </linearGradient>
+
+    <clipPath id="filmStripClip">
+      <rect x="-35" y="-55" width="70" height="110" rx="4" />
+    </clipPath>
+  </defs>
+
+  <!-- ==================== BACKGROUND BASELINE & SHADOW ==================== -->
+  <path d="M 40 162 L 160 162" stroke="#0f172a" stroke-width="2" stroke-linecap="round" />
+
+  <!-- ==================== TOP LEFT: FILM SPOOL / REEL ==================== -->
+  <g id="film-spool" transform="translate(62, 70)">
+    <!-- Outer Circle Spool -->
+    <circle cx="0" cy="0" r="17" fill="#1e293b" />
+    <circle cx="0" cy="0" r="14" fill="#0f172a" />
+    <!-- 4 Perforation cutouts -->
+    <circle cx="0" cy="-8" r="4" fill="#ffffff" opacity="0.9" />
+    <circle cx="0" cy="8" r="4" fill="#ffffff" opacity="0.9" />
+    <circle cx="-8" cy="0" r="4" fill="#ffffff" opacity="0.9" />
+    <circle cx="8" cy="0" r="4" fill="#ffffff" opacity="0.9" />
+    <!-- Center Hub -->
+    <circle cx="0" cy="0" r="5" fill="#6366f1" />
+    <circle cx="0" cy="0" r="2" fill="#ffffff" />
+  </g>
+
+  <!-- ==================== CENTER DIAGONAL FILM STRIP ==================== -->
+  <g id="diagonal-filmstrip" transform="translate(108, 82) rotate(45)">
+    <!-- Dark Filmstrip Border -->
+    <rect x="-38" y="-58" width="76" height="116" rx="6" fill="#0f172a" />
+    
+    <!-- Top & Bottom Perforations Rows (rotated, so left & right) -->
+    <!-- Left Perforations -->
+    <g fill="#ffffff">
+      <rect x="-35" y="-52" width="4" height="4" rx="1" />
+      <rect x="-35" y="-42" width="4" height="4" rx="1" />
+      <rect x="-35" y="-32" width="4" height="4" rx="1" />
+      <rect x="-35" y="-22" width="4" height="4" rx="1" />
+      <rect x="-35" y="-12" width="4" height="4" rx="1" />
+      <rect x="-35" y="-2" width="4" height="4" rx="1" />
+      <rect x="-35" y="8" width="4" height="4" rx="1" />
+      <rect x="-35" y="18" width="4" height="4" rx="1" />
+      <rect x="-35" y="28" width="4" height="4" rx="1" />
+      <rect x="-35" y="38" width="4" height="4" rx="1" />
+      <rect x="-35" y="48" width="4" height="4" rx="1" />
+
+      <!-- Right Perforations -->
+      <rect x="31" y="-52" width="4" height="4" rx="1" />
+      <rect x="31" y="-42" width="4" height="4" rx="1" />
+      <rect x="31" y="-32" width="4" height="4" rx="1" />
+      <rect x="31" y="-22" width="4" height="4" rx="1" />
+      <rect x="31" y="-12" width="4" height="4" rx="1" />
+      <rect x="31" y="-2" width="4" height="4" rx="1" />
+      <rect x="31" y="8" width="4" height="4" rx="1" />
+      <rect x="31" y="18" width="4" height="4" rx="1" />
+      <rect x="31" y="28" width="4" height="4" rx="1" />
+      <rect x="31" y="38" width="4" height="4" rx="1" />
+      <rect x="31" y="48" width="4" height="4" rx="1" />
+    </g>
+
+    <!-- Inside Picture Cell 1 -->
+    <rect x="-26" y="-50" width="52" height="46" rx="3" fill="url(#filmGlow)" />
+    <circle cx="0" cy="-27" r="16" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 2" fill="none" />
+    <circle cx="0" cy="-27" r="10" stroke="#ffffff" stroke-width="1.5" fill="none" />
+
+    <!-- Inside Picture Cell 2 -->
+    <rect x="-26" y="4" width="52" height="46" rx="3" fill="url(#filmGlow)" />
+    <circle cx="0" cy="27" r="16" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="2 2" fill="none" />
+  </g>
+
+  <!-- ==================== CLAPPERBOARD & MONITOR SCREEN ==================== -->
+  <g id="clapperboard-screen" transform="translate(68, 102)">
+    <!-- Monitor / Clapper Lower Body -->
+    <rect x="0" y="20" width="64" height="38" rx="4" fill="#0f172a" />
+    <!-- White Play Triangle on Screen -->
+    <path d="M 28 32 L 40 39 L 28 46 Z" fill="#ffffff" />
+    
+    <!-- Clapper Stick Top (Striped) -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="4" width="64" height="14" rx="2" fill="#0f172a" />
+      <!-- White diagonal zebra stripes on clapper -->
+      <path d="M 8 18 L 18 4 L 26 4 L 16 18 Z" fill="#ffffff" />
+      <path d="M 28 18 L 38 4 L 46 4 L 36 18 Z" fill="#ffffff" />
+      <path d="M 48 18 L 58 4 L 64 4 L 56 18 Z" fill="#ffffff" />
+    </g>
+
+    <!-- Monitor Stand base -->
+    <rect x="16" y="58" width="32" height="3" rx="1.5" fill="#334155" />
+    <rect x="29" y="55" width="6" height="4" fill="#334155" />
+  </g>
+
+  <!-- ==================== LEFT CHARACTER: WOMAN CUTTING WITH SCISSORS ==================== -->
+  <g id="editor-woman">
+    <!-- Office Chair -->
+    <rect x="42" y="102" width="10" height="24" rx="3" fill="#0f172a" />
+    <rect x="44" y="126" width="22" height="6" rx="2" fill="#0f172a" />
+    <!-- Chair Stem & Wheel Base -->
+    <path d="M 59 132 L 59 156" stroke="#0f172a" stroke-width="3" />
+    <path d="M 51 156 L 67 156" stroke="#0f172a" stroke-width="3" stroke-linecap="round" />
+    <circle cx="52" cy="158" r="2" fill="#0f172a" />
+    <circle cx="66" cy="158" r="2" fill="#0f172a" />
+
+    <!-- Woman Body / Sitting Legs -->
+    <!-- Blue Pants -->
+    <path d="M 52 118 L 68 118 L 74 136 L 76 150 L 68 152 L 64 138 L 56 138 L 52 118 Z" fill="#3b82f6" />
+    <!-- Shoes (Sky Blue) -->
+    <ellipse cx="73" cy="154" rx="5" ry="2.5" fill="#60a5fa" />
+    <ellipse cx="66" cy="153" rx="4" ry="2" fill="#60a5fa" />
+
+    <!-- Red/Coral Shirt -->
+    <path d="M 51 98 C 51 98, 59 95, 66 98 L 66 118 L 51 118 Z" fill="#f43f5e" />
+
+    <!-- Head & Dark Hair -->
+    <circle cx="58" cy="91" r="5.5" fill="url(#skinGrad)" />
+    <!-- Dark Long Hair -->
+    <path d="M 52 87 C 53 82, 63 82, 65 87 C 66 93, 62 98, 64 102 C 60 102, 58 100, 56 97 C 54 99, 50 97, 50 92 C 50 88, 52 87, 52 87 Z" fill="#0f172a" />
+
+    <!-- Arms & Hands holding large Scissors -->
+    <path d="M 62 104 L 72 108 L 76 112" stroke="url(#skinGrad)" stroke-width="3.5" stroke-linecap="round" />
+
+    <!-- Large Blue Scissors (Editing Film) -->
+    <g transform="translate(68, 79) rotate(-15)">
+      <!-- Scissor Ring 1 -->
+      <ellipse cx="14" cy="24" rx="6" ry="9" fill="none" stroke="url(#scissorBlue)" stroke-width="3" />
+      <!-- Scissor Ring 2 -->
+      <ellipse cx="26" cy="26" rx="6" ry="9" fill="none" stroke="url(#scissorBlue)" stroke-width="3" />
+      <!-- Scissor Blade 1 -->
+      <path d="M 14 16 L 36 -2" stroke="#cbd5e1" stroke-width="3.5" stroke-linecap="round" />
+      <!-- Scissor Blade 2 -->
+      <path d="M 24 18 L 30 -2" stroke="#e2e8f0" stroke-width="3" stroke-linecap="round" />
+      <!-- Center Pivot Rivet -->
+      <circle cx="21" cy="12" r="2" fill="#0f172a" />
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT CHARACTER: VIDEOGRAPHER WITH CAMERA ==================== -->
+  <g id="cameraman">
+    <!-- Blue Pants -->
+    <path d="M 126 112 L 143 112 L 145 156 L 138 156 L 135 128 L 132 156 L 125 156 Z" fill="#3b82f6" />
+    <!-- Dark Shoes -->
+    <ellipse cx="127" cy="158" rx="5" ry="3" fill="#0f172a" />
+    <ellipse cx="143" cy="158" rx="5" ry="3" fill="#0f172a" />
+
+    <!-- White T-Shirt Body -->
+    <path d="M 122 84 C 122 84, 134 81, 147 84 L 145 114 L 124 114 Z" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5" />
+    <path d="M 145 84 L 152 98 L 145 101 L 142 88 Z" fill="#f8fafc" />
+
+    <!-- Right Arm & Shoulder holding camera -->
+    <path d="M 122 86 L 118 97 L 128 98" stroke="url(#skinGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M 145 96 L 148 114" stroke="url(#skinGrad)" stroke-width="3.5" stroke-linecap="round" fill="none" />
+
+    <!-- Head & Short Dark Hair -->
+    <circle cx="134" cy="76" r="6" fill="url(#skinGrad)" />
+    <!-- Hair -->
+    <path d="M 128 75 C 128 70, 137 68, 140 73 C 141 77, 138 78, 138 80 C 134 80, 130 79, 128 75 Z" fill="#0f172a" />
+    <!-- Face Profile Ear & Eye -->
+    <circle cx="132" cy="76" r="1" fill="#0f172a" />
+
+    <!-- Video Camera on Shoulder (Navy/Dark Slate) -->
+    <g transform="translate(108, 68)">
+      <!-- Main Camera Body -->
+      <rect x="8" y="2" width="22" height="13" rx="2" fill="#0f172a" />
+      <!-- Lens Hood on Front -->
+      <path d="M 8 5 L 1 2 L 1 15 L 8 12 Z" fill="#1e293b" />
+      <rect x="0" y="3" width="2" height="11" rx="0.5" fill="#334155" />
+      <!-- Top Handle -->
+      <path d="M 14 2 L 14 -1 L 24 -1 L 24 2" stroke="#1e293b" stroke-width="2" fill="none" stroke-linecap="round" />
+      <!-- Viewfinder Eyepiece -->
+      <rect x="28" y="5" width="5" height="4" rx="1" fill="#334155" />
+      <circle cx="34" cy="7" r="2" fill="#0f172a" />
+      <!-- Button/Recording light dot -->
+      <circle cx="18" cy="6" r="1" fill="#ef4444" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Blue Gradient matching Icons8 LinkedIn 32px -->
+    <linearGradient id="liBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5495FE" />
+      <stop offset="40%" stop-color="#0A66C2" />
+      <stop offset="100%" stop-color="#004182" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Squircle Base (Icons8 Style) -->
+  <rect width="512" height="512" rx="115" fill="url(#liBlueGradient)" />
+
+  <!-- LinkedIn 'i' dot -->
+  <circle cx="156" cy="156" r="44" fill="#FFFFFF" />
+
+  <!-- LinkedIn 'i' stem -->
+  <rect x="116" y="218" width="80" height="174" rx="6" fill="#FFFFFF" />
+
+  <!-- LinkedIn 'n' lettermark -->
+  <path d="M 230 218 H 304 V 244 C 322 225 348 214 384 214 C 452 214 480 256 480 332 V 392 H 400 V 338 C 400 302 388 282 360 282 C 328 282 314 304 314 342 V 392 H 230 V 218 Z" fill="#FFFFFF" />
+</svg>

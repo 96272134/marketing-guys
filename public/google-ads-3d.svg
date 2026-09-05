@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%">
+  <!-- Yellow Left Pill (Slanted / ) -->
+  <path d="M 5.0 29.4 L 18.0 7.4 A 7 7 0 0 1 30.0 14.6 L 17.0 36.6 A 7 7 0 0 1 5.0 29.4 Z" fill="#FBBC04" />
+
+  <!-- Blue Right Pill (Slanted \ , overlapping Yellow at top apex) -->
+  <path d="M 18.0 14.6 L 31.0 36.6 A 7 7 0 0 0 43.0 29.4 L 30.0 7.4 A 7 7 0 0 0 18.0 14.6 Z" fill="#1A73E8" />
+
+  <!-- Green Circle (At the bottom-left base) -->
+  <circle cx="11" cy="33" r="7" fill="#34A853" />
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Red Gradient matching Icons8 YouTube 32px -->
+    <linearGradient id="ytRedGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF4E45" />
+      <stop offset="35%" stop-color="#FF1E15" />
+      <stop offset="100%" stop-color="#D50000" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Squircle Base (Icons8 Style) -->
+  <rect width="512" height="512" rx="115" fill="url(#ytRedGradient)" />
+
+  <!-- Center White Play Triangle with subtly softened corners -->
+  <path d="M 214 172 C 205 167 194 173 194 184 V 328 C 194 339 205 345 214 340 L 338 268 C 347 263 347 251 338 246 Z" fill="#FFFFFF" />
+</svg>

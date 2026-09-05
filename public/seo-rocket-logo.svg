@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="100%" height="100%" fill="none">
+  <!-- S - Vibrant Bold Green -->
+  <path d="M 68 82 C 68 73 74 65 89 65 C 103 65 110 73 111 81 L 138 74 C 134 56 117 41 89 41 C 58 41 37 57 37 84 C 37 122 84 117 84 135 C 84 142 77 146 68 146 C 53 146 45 137 43 126 L 16 133 C 20 154 39 170 69 170 C 101 170 116 152 116 133 C 116 93 68 100 68 82 Z" fill="#00A651" />
+
+  <!-- E - Vibrant Orange/Yellow Square Base -->
+  <path d="M 152 45 L 228 45 L 228 73 L 184 73 L 184 94 L 224 94 L 224 120 L 184 120 L 184 142 L 228 142 L 228 170 L 152 170 Z" fill="#FBAE36" />
+
+  <!-- O - Red Circular Horseshoe Outer Shell -->
+  <g id="letter-O-and-rocket">
+    <!-- Red Outer Ring & Inner Cutout -->
+    <path d="M 296 41 C 263 41 236 68 236 105 C 236 142 263 170 296 170 C 330 170 348 147 348 118 L 320 118 C 320 134 310 144 296 144 C 278 144 266 127 266 105 C 266 83 278 67 296 67 C 311 67 322 78 322 93 L 350 93 C 350 64 329 41 296 41 Z" fill="#EE2C38" />
+
+    <!-- Rocket Launching up & right through the O -->
+    <g transform="translate(268, 62) rotate(-35)">
+      <!-- Rocket Flame / Exhaust (Orange) -->
+      <path d="M 28 58 C 28 66 23 74 23 74 C 23 74 18 66 18 58 Z" fill="#F97316" />
+      <path d="M 25 58 C 25 63 23 68 23 68 C 23 68 21 63 21 58 Z" fill="#FDE047" />
+
+      <!-- Left Fin -->
+      <path d="M 13 42 C 6 46 4 56 4 56 C 11 56 17 50 17 44 Z" fill="#0284C7" />
+      <!-- Right Fin -->
+      <path d="M 33 42 C 40 46 42 56 42 56 C 35 56 29 50 29 44 Z" fill="#0284C7" />
+
+      <!-- Rocket Main Fuselage (Blue) -->
+      <path d="M 23 4 C 13 18 13 44 13 54 L 33 54 C 33 44 33 18 23 4 Z" fill="#0284C7" />
+
+      <!-- Porthole Window (White) -->
+      <circle cx="23" cy="24" r="5.5" fill="#FFFFFF" />
+    </g>
+  </g>
+</svg>

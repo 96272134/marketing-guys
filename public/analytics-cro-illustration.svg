@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100%" height="100%">
+  <defs>
+    <!-- Presentation Board Blue Gradient -->
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0272EC" />
+      <stop offset="100%" stop-color="#0057C2" />
+    </linearGradient>
+    <!-- Dark Blue for Easel Legs and Top Peg -->
+    <linearGradient id="standGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14539A" />
+      <stop offset="100%" stop-color="#0D3B72" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Easel Peg / Clamp -->
+  <rect x="22.5" y="5" width="3" height="4" rx="1" fill="#14539A" />
+
+  <!-- Easel Tripod Legs Underneath -->
+  <!-- Left Leg (angled outward) -->
+  <path d="M 19 36 L 15 44 C 14.8 44.5 15.2 45 15.8 45 C 16.2 45 16.6 44.7 16.8 44.3 L 20.8 36 Z" fill="url(#standGrad)" />
+  <!-- Right Leg (angled outward) -->
+  <path d="M 29 36 L 33 44 C 33.2 44.5 32.8 45 32.2 45 C 31.8 45 31.4 44.7 31.2 44.3 L 27.2 36 Z" fill="url(#standGrad)" />
+  <!-- Center Leg -->
+  <rect x="23" y="36" width="2" height="7.5" rx="1" fill="url(#standGrad)" />
+
+  <!-- Presentation Board Body (Blue Rounded Rectangle) -->
+  <rect x="6" y="8" width="36" height="28" rx="2" fill="url(#boardGrad)" />
+
+  <!-- Bottom Ledge / White Marker Shelf -->
+  <rect x="11" y="29.5" width="26" height="2.5" rx="1.25" fill="#FFFFFF" />
+
+  <!-- Ascending 3-Bar Chart -->
+  <!-- Bar 1 (Left / Shortest - Medium Blue) -->
+  <rect x="13" y="21" width="6.5" height="7" rx="1" fill="#1D9BF0" />
+
+  <!-- Bar 2 (Middle / Medium Height - Bright Sky Blue) -->
+  <rect x="21" y="16.5" width="6.5" height="11.5" rx="1" fill="#38BDF8" />
+
+  <!-- Bar 3 (Right / Tallest - Luminous Cyan) -->
+  <rect x="29" y="12" width="6.5" height="16" rx="1" fill="#4DE2FD" />
+</svg>

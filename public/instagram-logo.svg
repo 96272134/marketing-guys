@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Multi-stop Linear Gradient -->
+    <linearGradient id="igGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD521" />
+      <stop offset="20%" stop-color="#F50000" />
+      <stop offset="45%" stop-color="#B900B4" />
+      <stop offset="70%" stop-color="#7B00E0" />
+      <stop offset="90%" stop-color="#3D00E0" />
+    </linearGradient>
+
+    <!-- Radial Glow for bottom-left warm amber highlight -->
+    <radialGradient id="igRadialAmber" cx="15%" cy="95%" r="75%">
+      <stop offset="0%" stop-color="#FFDE59" />
+      <stop offset="40%" stop-color="#FF914D" />
+      <stop offset="80%" stop-color="#FF3E6C" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Radial Glow for top-left blue violet highlight -->
+    <radialGradient id="igRadialBlue" cx="20%" cy="10%" r="60%">
+      <stop offset="0%" stop-color="#405DE6" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#833AB4" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Squircle Base with Gradient Background -->
+  <rect width="512" height="512" rx="115" fill="url(#igGradient)" />
+  <rect width="512" height="512" rx="115" fill="url(#igRadialAmber)" />
+  <rect width="512" height="512" rx="115" fill="url(#igRadialBlue)" />
+
+  <!-- White Instagram Camera Glyph -->
+  <!-- Outer Rounded Rectangle -->
+  <rect x="110" y="110" width="292" height="292" rx="80" fill="none" stroke="#FFFFFF" stroke-width="36" />
+
+  <!-- Center Lens Circle -->
+  <circle cx="256" cy="256" r="72" fill="none" stroke="#FFFFFF" stroke-width="36" />
+
+  <!-- Top-Right Flash Dot -->
+  <circle cx="340" cy="172" r="20" fill="#FFFFFF" />
+</svg>

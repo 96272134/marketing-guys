@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Sphere Radial Lighting -->
+    <radialGradient id="sphereGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="55%" stop-color="#f1f5f9" />
+      <stop offset="85%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </radialGradient>
+    
+    <!-- Sphere Shadow Underneath -->
+    <radialGradient id="dropShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#0f172a" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Clip Path for the Sphere Surface -->
+    <clipPath id="sphereClip">
+      <circle cx="100" cy="95" r="82" />
+    </clipPath>
+    
+    <linearGradient id="bubbleRed" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+
+    <linearGradient id="bubbleGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#84cc16" />
+      <stop offset="100%" stop-color="#65a30d" />
+    </linearGradient>
+
+    <linearGradient id="goldLock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+
+    <linearGradient id="blueCloud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Ground Contact Shadow -->
+  <ellipse cx="100" cy="182" rx="72" ry="12" fill="url(#dropShadow)" />
+
+  <!-- Main 3D Sphere Base -->
+  <circle cx="100" cy="95" r="82" fill="url(#sphereGrad)" />
+
+  <!-- Icons mapped onto sphere surface with sphere clip -->
+  <g clip-path="url(#sphereClip)">
+    <!-- Ambient grid curved latitude lines for 3D depth -->
+    <ellipse cx="100" cy="95" rx="82" ry="32" stroke="#cbd5e1" stroke-width="0.75" stroke-dasharray="3 4" opacity="0.4" fill="none" />
+    <ellipse cx="100" cy="95" rx="82" ry="60" stroke="#cbd5e1" stroke-width="0.75" stroke-dasharray="3 4" opacity="0.3" fill="none" />
+
+    <!-- Top Left Lock Icon -->
+    <g transform="translate(56, 42) scale(0.65)">
+      <rect x="5" y="10" width="22" height="18" rx="4" fill="#64748b" />
+      <path d="M 10 10 V 6 A 6 6 0 0 1 22 6 V 10" stroke="#64748b" stroke-width="3.5" fill="none" stroke-linecap="round" />
+      <circle cx="16" cy="19" r="2.5" fill="#ffffff" />
+    </g>
+
+    <!-- Top Center Blog Speech Bubble (Charcoal) -->
+    <g transform="translate(62, 28) scale(0.6)">
+      <rect x="0" y="0" width="46" height="24" rx="12" fill="#475569" />
+      <path d="M 15 24 L 10 30 L 22 24 Z" fill="#475569" />
+      <text x="23" y="16" fill="#ffffff" font-size="11" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">BLOG</text>
+    </g>
+
+    <!-- Top Thumbs Up (Slate/Grey) -->
+    <path d="M 94 38 C 94 34, 98 30, 102 30 C 104 30, 106 33, 106 37 L 106 41 L 118 41 C 122 41, 124 44, 123 48 L 119 60 C 118 63, 115 65, 112 65 L 94 65 Z" fill="#64748b" />
+
+    <!-- Top Right SMS Speech Bubble (Navy/Slate) -->
+    <g transform="translate(120, 29) scale(0.55)">
+      <rect x="0" y="0" width="48" height="25" rx="12.5" fill="#334155" />
+      <path d="M 28 25 L 35 32 L 35 25 Z" fill="#334155" />
+      <text x="24" y="16" fill="#ffffff" font-size="12" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">SMS</text>
+    </g>
+
+    <!-- Top Right Wifi Signal (Orange) -->
+    <g transform="translate(112, 47) scale(0.65)">
+      <path d="M 0 15 A 15 15 0 0 1 24 15" stroke="#f97316" stroke-width="4.5" stroke-linecap="round" fill="none" />
+      <path d="M 4 20 A 10 10 0 0 1 20 20" stroke="#f97316" stroke-width="4" stroke-linecap="round" fill="none" />
+      <circle cx="12" cy="24" r="2.5" fill="#f97316" />
+    </g>
+
+    <!-- Top Right Red Heart -->
+    <path d="M 152 52 C 148 45, 138 47, 142 58 C 145 64, 152 70, 152 70 C 152 70, 159 64, 162 58 C 166 47, 156 45, 152 52 Z" fill="#dc2626" />
+
+    <!-- Top Center Blue Cloud -->
+    <path d="M 72 72 A 7 7 0 0 1 83 67 A 9 9 0 0 1 97 71 A 6 6 0 0 1 96 79 L 72 79 A 5 5 0 0 1 72 72 Z" fill="url(#blueCloud)" />
+
+    <!-- Far Left Green Mobile Device -->
+    <g transform="translate(26, 85) scale(0.55)">
+      <rect x="2" y="4" width="22" height="38" rx="5" stroke="#16a34a" stroke-width="4" fill="none" />
+      <path d="M 2 32 L 24 32" stroke="#16a34a" stroke-width="2.5" />
+      <circle cx="13" cy="37" r="2" fill="#16a34a" />
+      <path d="M 8 0 L 8 4" stroke="#16a34a" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- Bottom Left Red SMS Bubble -->
+    <g transform="translate(30, 120) scale(0.6)">
+      <rect x="0" y="0" width="52" height="28" rx="14" fill="url(#bubbleRed)" />
+      <path d="M 32 28 L 38 35 L 37 28 Z" fill="url(#bubbleRed)" />
+      <text x="26" y="18" fill="#ffffff" font-size="13" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle" letter-spacing="1">SMS</text>
+    </g>
+
+    <!-- Bottom Left Video Camera (Magenta/Pink) -->
+    <g transform="translate(68, 138) scale(0.55)">
+      <rect x="0" y="8" width="24" height="18" rx="3" fill="#db2777" />
+      <path d="M 24 13 L 34 8 L 34 26 L 24 21 Z" fill="#db2777" />
+      <circle cx="6" cy="4" r="3.5" fill="#db2777" />
+      <circle cx="16" cy="4" r="3.5" fill="#db2777" />
+    </g>
+
+    <!-- Bottom Center-Left Green Thumbs Up -->
+    <g transform="translate(104, 126) scale(0.65)">
+      <path d="M 4 20 C 4 14, 9 8, 14 8 C 17 8, 19 12, 19 18 L 19 23 L 34 23 C 39 23, 42 27, 40 33 L 36 48 C 34 52, 30 55, 26 55 L 4 55 Z" fill="#16a34a" />
+    </g>
+
+    <!-- Mid-Right Green Blog Bubble -->
+    <g transform="translate(150, 108) scale(0.5)">
+      <rect x="0" y="0" width="48" height="28" rx="14" fill="url(#bubbleGreen)" />
+      <path d="M 12 28 L 6 36 L 20 28 Z" fill="url(#bubbleGreen)" />
+      <text x="24" y="18" fill="#ffffff" font-size="11" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle">BLOG</text>
+    </g>
+
+    <!-- Bottom Right Golden Lock -->
+    <g transform="translate(142, 116) scale(0.6)">
+      <rect x="5" y="12" width="24" height="20" rx="4" fill="url(#goldLock)" />
+      <path d="M 10 12 V 7 A 7 7 0 0 1 24 7 V 12" stroke="url(#goldLock)" stroke-width="4" fill="none" stroke-linecap="round" />
+      <circle cx="17" cy="22" r="3" fill="#ffffff" />
+    </g>
+
+    <!-- Small Decorative Symbols (@, #, etc.) -->
+    <text x="56" y="160" font-size="14" font-weight="900" fill="#334155" font-family="system-ui, sans-serif">@</text>
+    <text x="146" y="164" font-size="14" font-weight="900" fill="#334155" font-family="system-ui, sans-serif">#</text>
+    <text x="160" y="156" font-size="12" font-weight="900" fill="#64748b" font-family="system-ui, sans-serif">@</text>
+    <text x="38" y="76" font-size="12" font-weight="900" fill="#475569" font-family="system-ui, sans-serif">#</text>
+
+    <!-- ==================== CENTRAL BOLD "SOCIAL MEDIA" TYPOGRAPHY ==================== -->
+    <!-- Curved Perspective Ribbon/Text Layer across the globe center -->
+    <g id="central-typography">
+      <!-- Top Word: SOCIAL (Wrapped & Bold) -->
+      <text 
+        x="98" 
+        y="90" 
+        text-anchor="middle" 
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Arial Black', sans-serif" 
+        font-size="34" 
+        font-weight="900" 
+        letter-spacing="-0.5" 
+        fill="#0f172a"
+        transform="rotate(-4 98 90)"
+      >
+        SOCIAL
+      </text>
+
+      <!-- Bottom Word: MEDIA (Wrapped & Bold) -->
+      <text 
+        x="102" 
+        y="126" 
+        text-anchor="middle" 
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Arial Black', sans-serif" 
+        font-size="38" 
+        font-weight="900" 
+        letter-spacing="-1" 
+        fill="#0f172a"
+        transform="rotate(-4 102 126)"
+      >
+        MEDIA
+      </text>
+    </g>
+
+    <!-- 3D Specular Highlight Gloss Overlay -->
+    <ellipse cx="70" cy="55" rx="45" ry="28" fill="#ffffff" opacity="0.35" transform="rotate(-25 70 55)" />
+  </g>
+
+  <!-- Outer Sphere Rim Outline for contrast -->
+  <circle cx="100" cy="95" r="82" stroke="#e2e8f0" stroke-width="1.5" fill="none" />
+</svg>

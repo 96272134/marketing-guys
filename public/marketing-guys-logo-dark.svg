@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="100%" height="100%">
+  <defs>
+    <!-- Primary Blue Gradients (3D Facets) -->
+    <linearGradient id="blue-facet-main-d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="60%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+
+    <linearGradient id="blue-facet-light-d" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="blue-facet-dark-d" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+
+    <linearGradient id="blue-facet-bottom-d" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Silver Metallic Gradients for G -->
+    <linearGradient id="silver-metal-top-d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#F8FAFC" />
+      <stop offset="80%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+
+    <linearGradient id="silver-metal-bevel-d" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+
+    <!-- Chart Bars Gradient -->
+    <linearGradient id="chart-bar-grad-d" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Arrow Gradient -->
+    <linearGradient id="arrow-grad-d" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <filter id="logo-depth-shadow-d" x="-10%" y="-10%" width="125%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- ==================== EMBLEM: MG 3D MONOGRAM ==================== -->
+  <g filter="url(#logo-depth-shadow-d)">
+    <!-- Letter M -->
+    <path d="M 276 72 L 312 72 L 312 230 L 276 230 Z" fill="url(#blue-facet-dark-d)" />
+    <path d="M 276 72 L 356 174 L 356 232 L 312 232 L 312 72 Z" fill="url(#blue-facet-main-d)" />
+    <path d="M 356 174 L 468 64 L 496 90 L 396 232 L 356 232 Z" fill="url(#blue-facet-light-d)" />
+    <path d="M 356 174 L 418 204 L 396 232 L 356 232 Z" fill="url(#blue-facet-dark-d)" />
+    <path d="M 396 190 L 452 190 L 452 232 L 396 232 Z" fill="url(#blue-facet-bottom-d)" />
+
+    <!-- Bar Chart -->
+    <rect x="282" y="206" width="14" height="24" rx="2" fill="url(#chart-bar-grad-d)" stroke="#FFFFFF" stroke-width="1.5" />
+    <rect x="300" y="190" width="14" height="40" rx="2" fill="url(#chart-bar-grad-d)" stroke="#FFFFFF" stroke-width="1.5" />
+    <rect x="318" y="174" width="14" height="56" rx="2" fill="url(#chart-bar-grad-d)" stroke="#FFFFFF" stroke-width="1.5" />
+
+    <!-- Swoosh Arrow -->
+    <path d="M 262 218 C 262 218 274 246 348 244 C 388 242 422 218 438 190 L 426 190 L 444 174 L 444 196 L 434 192 C 418 220 384 248 344 248 C 274 248 262 218 262 218 Z" 
+          fill="url(#arrow-grad-d)" stroke="#FFFFFF" stroke-width="1.2" />
+    <path d="M 426 182 L 445 170 L 443 194 L 434 189 Z" fill="url(#blue-facet-light-d)" stroke="#FFFFFF" stroke-width="1.2" />
+
+    <!-- Letter G -->
+    <path d="M 454 84 C 496 52 558 58 596 92 C 612 106 620 124 624 142 L 576 156 C 574 144 568 132 556 122 C 534 104 498 106 476 126 C 460 142 452 164 454 186 C 442 164 438 116 454 84 Z" 
+          fill="url(#silver-metal-top-d)" />
+    <path d="M 454 84 C 496 52 558 58 596 92 L 588 98 C 554 68 498 62 460 92 Z" fill="#FFFFFF" opacity="0.95" />
+    <path d="M 476 126 C 498 106 534 104 556 122 C 568 132 574 144 576 156 L 562 160 C 558 148 550 138 540 130 C 522 116 492 118 474 136 Z" 
+          fill="url(#silver-metal-bevel-d)" />
+    <path d="M 454 186 C 458 214 480 238 514 244 C 554 250 594 236 618 206 C 628 194 632 180 634 164 L 542 164 L 542 184 L 594 184 C 586 204 564 218 538 218 C 508 218 486 198 480 172 C 480 172 456 172 454 186 Z" 
+          fill="url(#blue-facet-main-d)" />
+    <path d="M 542 164 L 634 164 L 634 184 L 542 184 Z" fill="url(#blue-facet-light-d)" />
+    <path d="M 514 244 C 554 250 594 236 618 206 L 608 198 C 586 224 550 236 514 230 Z" fill="url(#blue-facet-dark-d)" />
+  </g>
+
+  <!-- Typography: White for dark background -->
+  <text x="400" y="284" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" 
+        font-size="34" 
+        font-weight="900" 
+        letter-spacing="4" 
+        fill="#FFFFFF">
+    MARKETING GUYS
+  </text>
+
+  <!-- Divider Line with Center Dot -->
+  <g transform="translate(0, 302)">
+    <line x1="260" y1="0" x2="388" y2="0" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" />
+    <circle cx="400" cy="0" r="3.5" fill="#38BDF8" />
+    <line x1="412" y1="0" x2="540" y2="0" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+
+  <text x="400" y="324" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" 
+        font-size="14.5" 
+        font-weight="800" 
+        letter-spacing="3" 
+        fill="#7DD3FC">
+    DIGITAL MARKETING SIMPLIFIED.
+  </text>
+
+  <text x="400" y="344" 
+        text-anchor="middle" 
+        font-family="'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif" 
+        font-size="12" 
+        font-weight="700" 
+        letter-spacing="4" 
+        fill="#94A3B8">
+    STRATEGY. GROWTH. RESULTS.
+  </text>
+</svg>

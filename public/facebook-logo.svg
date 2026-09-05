@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Vibrant Blue Gradient matching Icons8 Facebook 32px -->
+    <linearGradient id="fbBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5495FE" />
+      <stop offset="40%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1877F2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Squircle Base (Icons8 Style) -->
+  <rect width="512" height="512" rx="115" fill="url(#fbBlueGradient)" />
+
+  <!-- Crisp White Facebook 'f' Lettermark -->
+  <path d="M 334 512 V 314 H 400 L 410 236 H 334 V 186 C 334 163.5 340.5 148 372.5 148 L 413 148 V 78.5 C 405.8 77.5 381 75.3 352.2 75.3 C 292 75.3 251 112 251 179.5 V 236 H 183 V 314 H 251 V 512 Z" fill="#FFFFFF" />
+</svg>
