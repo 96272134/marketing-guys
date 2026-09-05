@@ -67,7 +67,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Subheadline */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-              We help businesses increase visibility, generate quality leads and maximize ROI with result-driven digital marketing strategies.
+               We help businesses increase visibility, generate quality leads and maximize ROI with AI-powered, result-driven digital marketing strategies.
             </p>
 
             {/* Dual CTA Buttons */}
