@@ -390,9 +390,9 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: "test-4",
-    name: "Priya Sharma",
+    name: "My Travel Plan",
     role: "Founder & CEO",
-    company: "My Travel Plans",
+    company: "",
     avatar: "/mytravel.jpeg",
     rating: 5,
     content: "I have been working with Marketing Guys for the last 2 years, and it has been a great experience. The team is creative, supportive and always understands what we need. They have been consistent with their work and have helped us with our marketing in many ways. Really happy to have them as our marketing partner.",

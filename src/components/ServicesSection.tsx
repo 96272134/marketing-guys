@@ -67,7 +67,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             OUR SERVICES
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading mb-4">
-           complete digital marketing with ai
+           Complete Digital Marketing, Powered by AI & Built for Growth
           </h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-slate-600 text-base sm:text-lg">
