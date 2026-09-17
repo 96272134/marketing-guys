@@ -7,15 +7,14 @@ export interface VideoSample {
 }
 
 export const VIDEO_SAMPLES_DATA: VideoSample[] = [
-  { id: "sample-1", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787737398/cc_xc.mp4" },
-  { id: "sample-2", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787737294/graphics_videos.mp4" },
-  { id: "sample-3", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787737222/chor_3.mp4" },
-  { id: "sample-4", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787737221/Untitled_369.mp4" },
-  { id: "sample-5", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787993946/0829_1.mp4" },
-  { id: "sample-6", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787993921/0829.mp4" },
-  { id: "sample-7", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787993832/crazistudio.mp4" },
-  { id: "sample-8", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787993776/AQOTU6iLe9sQj7ge_9wsm8ygA06RNxURZN7gJm6Ia4MMKlYWeAVbdGnIvI2vAuE2L1YXUJ8buPUigVzrDCNZDqxYPXP4pFS3.mp4" },
-  { id: "sample-9", videoSrc: "https://res.cloudinary.com/e6yguoc7/video/upload/v1787993745/Premium_2BHK_3BHK_flats_available_in_Noida_%EF%B8%8FSmart_design_prime_location_and_great_inves.mp4" }
+  { id: "sample-1", videoSrc: "/videos/0823.mp4" },
+  { id: "sample-2", videoSrc: "/videos/0829(1).mp4" },
+  { id: "sample-3", videoSrc: "/videos/cc%20xc.mp4" },
+  { id: "sample-4", videoSrc: "/videos/crazistudio.mp4" },
+  { id: "sample-5", videoSrc: "/videos/graphics%20videos.mp4" },
+  { id: "sample-6", videoSrc: "/videos/Untitled%20369.mp4" },
+  { id: "sample-7", videoSrc: "/videos/video.mp4" },
+  { id: "sample-8", videoSrc: "/videos/video2.mp4" }
 ];
 
 const VideoCard: React.FC<{ sample: VideoSample; indexKey: string }> = ({ sample, indexKey }) => {
@@ -47,10 +46,10 @@ const VideoCard: React.FC<{ sample: VideoSample; indexKey: string }> = ({ sample
       className="relative shrink-0 w-[190px] sm:w-[210px] md:w-[220px] lg:w-[calc((min(100vw-4rem,1216px)-4*1.25rem)/5)] lg:max-w-[228px] aspect-[9/16] bg-slate-950 rounded-2xl overflow-hidden shadow-lg border border-slate-200/80 select-none group/video transition-transform duration-300 hover:shadow-2xl hover:-translate-y-1"
       style={{ transform: 'translateZ(0)' }}
     >
-      {/* Background Soft Glow using pure CSS instead of a 2nd running video */}
+      {/* Background soft base */}
       <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-950 to-black pointer-events-none" />
 
-      {/* Main Video */}
+      {/* Main Video - object-contain ensures full display without cropping text */}
       <video
         ref={videoRef}
         src={sample.videoSrc}
@@ -128,9 +127,11 @@ export const VideoSamplesSection: React.FC = () => {
       {/* Marquee Carousel Track */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative group w-full overflow-hidden select-none py-2">
+          {/* Edge fading gradients */}
           <div className="absolute left-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
 
+          {/* Sliding Cards */}
           <div className="video-marquee-track flex gap-5">
             {loopedVideos.map((sample, idx) => (
               <VideoCard 

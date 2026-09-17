@@ -15,70 +15,70 @@ export const GRAPHIC_DESIGNS: GraphicDesignItem[] = [
     title: "Gourmet Flame-Grilled Burger",
     badge: "Restaurant & Delivery",
     category: "food",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998091/4b7a7598-d0e8-4ef9-bd28-5db4343cce9e.png"
+    imageUrl: "/images/4b7a7598-d0e8-4ef9-bd28-5db4343cce9e.png"
   },
   {
     id: "design-car",
     title: "Premium Showroom Dealership",
     badge: "Automotive Showroom",
     category: "auto",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998092/1_1.png"
+    imageUrl: "/images/1%20(1).png"
   },
   {
     id: "design-astrology",
     title: "Vedic Astrology Guidance",
     badge: "Consultation & Services",
     category: "tech",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998094/1_2.png"
+    imageUrl: "/images/1%20(2).png"
   },
   {
     id: "design-cinematography",
     title: "Cinematography & Video Production",
     badge: "Creative Production",
     category: "tech",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998095/1_3.png"
+    imageUrl: "/images/1%20(3).png"
   },
   {
     id: "design-jewelry",
     title: "Radiance Jewels Luxury Collection",
     badge: "Luxury & Jewelry",
     category: "luxury",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998097/1_4.png"
+    imageUrl: "/images/1%20(4).png"
   },
   {
     id: "design-dining",
     title: "Authentic Fine Dining & Moments",
     badge: "Restaurant & Dine-In",
     category: "food",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998088/1_5.png"
+    imageUrl: "/images/1%20(5).png"
   },
   {
     id: "design-fashion",
     title: "Festive Ethnic Coutures",
     badge: "Fashion & Apparel",
     category: "fashion",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998087/1_6.png"
+    imageUrl: "/images/1%20(6).png"
   },
   {
     id: "design-kids",
     title: "Little Styles Kids Wear",
     badge: "Kids & Fashion",
     category: "fashion",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998088/1_7.png"
+    imageUrl: "/images/1%20(7).png"
   },
   {
     id: "design-beauty",
     title: "Radiant Glow BB Cream",
     badge: "Beauty & Wellness",
     category: "beauty",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998090/1_8.png"
+    imageUrl: "/images/1%20(8).png"
   },
   {
     id: "design-creative-extra",
     title: "Special Campaign Banner",
     badge: "Brand Identity",
     category: "ecommerce",
-    imageUrl: "https://res.cloudinary.com/e6yguoc7/image/upload/v1787998092/9120eb5c-a796-48a6-8126-b7aca4b05790.png"
+    imageUrl: "/images/9120eb5c-a796-48a6-8126-b7aca4b05790.png"
   }
 ];
 
@@ -97,7 +97,6 @@ export const GraphicsSocialDesignsSection: React.FC = () => {
         alt={item.title}
         loading="lazy"
         className="w-full h-full object-cover block transition-transform duration-500 group-hover/card:scale-105"
-        referrerPolicy="no-referrer"
       />
       {/* Subtle overlay on hover with quick zoom icon */}
       <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
@@ -132,7 +131,6 @@ export const GraphicsSocialDesignsSection: React.FC = () => {
       `}</style>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-blue-600 bg-blue-50 px-3 py-1 rounded-full mb-3 border border-blue-100">
@@ -150,17 +148,15 @@ export const GraphicsSocialDesignsSection: React.FC = () => {
 
         {/* Marquee Slider Container */}
         <div className="relative group w-full overflow-hidden select-none py-2">
-          
           {/* Subtle edge fade gradients */}
           <div className="absolute left-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-r from-slate-50/90 to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-10 sm:w-16 bg-gradient-to-l from-slate-50/90 to-transparent z-10 pointer-events-none" />
 
-          {/* Marquee Track (Seamless Continuous Loop with 4 cards per row on desktop) */}
+          {/* Marquee Track */}
           <div className="graphics-marquee-track flex gap-6">
             {loopedDesigns.map((item, idx) => renderCard(item, 'track', idx))}
           </div>
         </div>
-
       </div>
 
       {/* Lightbox Modal */}
@@ -178,7 +174,6 @@ export const GraphicsSocialDesignsSection: React.FC = () => {
                 src={selectedDesign.imageUrl} 
                 alt={selectedDesign.title}
                 className="w-full h-full object-cover"
-                referrerPolicy="no-referrer"
               />
               <button
                 onClick={() => setSelectedDesign(null)}
