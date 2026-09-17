@@ -173,11 +173,11 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onFormSubmitted 
                   <span className="font-semibold text-sm sm:text-base">{AGENCY_INFO.agencyHandle}</span>
                 </div>
 
-                <div className="flex items-center gap-3 text-slate-200">
-                  <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-blue-400 shrink-0">
+                <div className="flex items-start gap-3 text-slate-200">
+                  <div className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-blue-400 shrink-0 mt-0.5">
                     <MapPin className="w-4 h-4" />
                   </div>
-                  <span className="font-semibold text-xs sm:text-sm">{AGENCY_INFO.location}</span>
+                  <span className="font-semibold text-xs sm:text-sm leading-relaxed">{AGENCY_INFO.location}</span>
                 </div>
               </div>
             </div>

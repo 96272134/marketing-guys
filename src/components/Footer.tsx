@@ -12,7 +12,8 @@ import {
   ExternalLink,
   Shield,
   Lock,
-  UserCheck
+  UserCheck,
+  MapPin
 } from 'lucide-react';
 import { AGENCY_INFO, SERVICES_DATA } from '../data/marketingData';
 import { BrandLogo } from './BrandLogo';
@@ -79,7 +80,7 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed pr-4">
-              We are a result-driven digital marketing agency helping ambitious businesses, Ecommerce brands, and B2B enterprises scale revenue predictably online.
+              We are a result-driven digital marketing agency helping ambitious businesses, eCommerce brands, and B2B enterprises scale revenue predictably online.
             </p>
 
             {/* Social Icons row with real handles */}
@@ -280,6 +281,11 @@ export const Footer: React.FC<FooterProps> = ({
                 <Globe className="w-4 h-4 text-blue-400 group-hover:text-pink-400 transition-colors shrink-0" />
                 <span className="group-hover:underline">@{AGENCY_INFO.agencyHandle}</span>
               </a>
+
+              <div className="flex items-start gap-3 text-slate-300">
+                <MapPin className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
+                <span className="text-xs leading-relaxed text-slate-400">{AGENCY_INFO.location}</span>
+              </div>
             </div>
 
             <div className="pt-2">

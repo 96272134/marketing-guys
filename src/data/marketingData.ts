@@ -11,7 +11,8 @@ export const AGENCY_INFO = {
   email: "marketingguys99@gmail.com",
   directEmail: "marketingguys99@gmail.com",
   agencyHandle: "marketingguysagencynoida",
-  location: "Noida, Uttar Pradesh, India",
+  location: "No. C-03, Greater Noida W Rd, Haibatpur, Sector 4, Ghaziabad, Uttar Pradesh 201309",
+  address: "No. C-03, Greater Noida W Rd, Haibatpur, Sector 4, Ghaziabad, Uttar Pradesh 201309",
   whatsappNumber: "+919910536796",
   socials: {
     facebook: "https://www.facebook.com/share/19bpT6Ze1x/",
