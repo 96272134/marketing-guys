@@ -10,15 +10,15 @@ export const AGENCY_INFO = {
   founders: ["Sukhminder Singh", "Vijay Chauhan"],
   email: "marketingguys99@gmail.com",
   directEmail: "marketingguys99@gmail.com",
-  agencyHandle: "marketingguysagencynoida",
-  location: "No. C-03, Greater Noida W Rd, Haibatpur, Sector 4, Ghaziabad, Uttar Pradesh 201309",
-  address: "No. C-03, Greater Noida W Rd, Haibatpur, Sector 4, Ghaziabad, Uttar Pradesh 201309",
+  agencyHandle: "marketingguysagency",
+  location: "No. C-03, Haibatpur, Sector 4, Ghaziabad, Uttar Pradesh 201309",
+  address: "No. C-03, Haibatpur, Sector 4, Ghaziabad, Uttar Pradesh 201309",
   whatsappNumber: "+919910536796",
   socials: {
     facebook: "https://www.facebook.com/share/19bpT6Ze1x/",
-    instagram: "https://www.instagram.com/marketingguysagencynoida?igsi=N2tkOTN5ZDNrdjdq",
+    instagram: "https://www.instagram.com/marketingguys.agency/",
     linkedin: "https://www.linkedin.com/in/marketing-guys-3b3b0a431",
-    youtube: "https://www.youtube.com/@Marketingguysagencynoida"
+    youtube: "https://www.youtube.com/@Marketingguysagency"
   },
   foundedYear: "2020",
   experienceYears: "7+",
@@ -29,9 +29,9 @@ export const AGENCY_INFO = {
 export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "seo",
-    title: "SEO Optimization",
-    shortDesc: "Improve your website ranking, increase organic traffic and grow your business with powerful SEO strategies.",
-    fullDesc: "We deploy full-funnel search engine optimization covering technical architecture, semantic keyword clusters, on-page optimization, and high-domain-authority backlink building that keeps you on Page 1 of Google.",
+    title: "SEO Optimization & Search Marketing",
+    shortDesc: "Dominate Google Page 1, outrank competitors, and scale organic organic traffic with technical SEO, semantic keyword clusters, and authoritative link building.",
+    fullDesc: "We deploy full-funnel search engine optimization covering technical Core Web Vitals architecture, semantic keyword clusters, on-page optimization, and high-domain-authority backlink building that keeps you on Page 1 of Google for high-intent search queries.",
     iconName: "Search",
     iconBg: "bg-sky-50/90",
     iconColor: "text-sky-600",
@@ -39,20 +39,20 @@ export const SERVICES_DATA: ServiceItem[] = [
     customIconUrl: "/seo-growth-bars.svg",
     category: "seo",
     deliverables: [
-      "Comprehensive 120-point Technical SEO Audit",
-      "Competitor Keyword Gap Analysis",
-      "High-Intent Semantic Content Strategy",
-      "Authoritative White-Hat Link Building",
-      "Google Search Console & Core Web Vitals Optimization"
+      "Comprehensive 120-point Technical SEO & Schema Audit",
+      "Search Engine Optimization & Google Business Profile 3-Pack Growth",
+      "Competitor Keyword Gap & High-Intent Semantic Clusters",
+      "Authoritative White-Hat Link Building & Digital PR",
+      "Google Search Console & Core Web Vitals Speed Optimization"
     ],
     metrics: "+280% Average Organic Traffic Growth in 90 Days",
-    caseHighlight: "Ranked #1 for 45+ competitive keywords for a national SaaS client."
+    caseHighlight: "Ranked #1 for 45+ competitive keywords for a national SaaS & local healthcare client."
   },
   {
     id: "google-ads",
-    title: "Google Ads (PPC)",
-    shortDesc: "Get high-quality leads & sales with targeted Google Ads campaigns that deliver maximum ROI.",
-    fullDesc: "Precision Pay-Per-Click advertising campaigns designed to capture users at the exact moment of high buying intent across Google Search, Performance Max, Display, and YouTube.",
+    title: "Google Ads Management (PPC)",
+    shortDesc: "Capture high-intent buyers with data-driven Google Ads management, Search, PMax, and YouTube campaigns that maximize ROAS.",
+    fullDesc: "Precision Pay-Per-Click advertising campaigns designed to capture buyers at peak purchase intent across Google Search, Performance Max (PMax), Display, and YouTube. Engineered to lower customer acquisition cost (CAC) and scale qualified lead volume.",
     iconName: "Target",
     iconBg: "bg-blue-50/80",
     iconColor: "text-blue-600",
@@ -60,20 +60,20 @@ export const SERVICES_DATA: ServiceItem[] = [
     customIconUrl: "/google-ads-logo.svg",
     category: "paid",
     deliverables: [
-      "Negative Keyword Sculpting & Intent Matching",
-      "High-Converting Responsive Search Ads",
-      "Smart Bidding Strategy & ROAS Target Tuning",
-      "PMax Multi-Asset Creative Optimization",
-      "Real-time Lead & Conversion Tracking Setup"
+      "Negative Keyword Sculpting & Search Intent Matching",
+      "High-Converting Responsive Search Ads & Extensions",
+      "Smart Bidding Target ROAS & Target CPA Tuning",
+      "Performance Max (PMax) Multi-Asset Creative Feed Optimization",
+      "Server-Side Enhanced Conversions & Offline Lead Tracking Setup"
     ],
     metrics: "4.8x - 7.2x Average Return on Ad Spend (ROAS)",
     caseHighlight: "Generated 1,420 qualified B2B leads at $14.20 CPA in 60 days."
   },
   {
     id: "meta-ads",
-    title: "Meta Ads (FB & IG)",
-    shortDesc: "Reach the right audience and increase conversions with result-driven Facebook & Instagram Ads.",
-    fullDesc: "Hyper-targeted social ad campaigns combining thumb-stopping creative hooks, emotional copy, lookalike audiences, and dynamic retargeting to convert scrollers into loyal customers.",
+    title: "Meta Ads ROAS (FB & IG)",
+    shortDesc: "Scale e-commerce sales and generate qualified leads with thumb-stopping Facebook & Instagram ad funnels built for high ROAS.",
+    fullDesc: "Hyper-targeted social ad campaigns combining thumb-stopping creative hooks, emotional angle testing, lookalike audiences, and full-funnel retargeting to transform casual scrollers into high-LTV customers and qualified B2B leads.",
     iconName: "Infinity",
     iconBg: "bg-blue-50/80",
     iconColor: "text-blue-600",
@@ -81,20 +81,20 @@ export const SERVICES_DATA: ServiceItem[] = [
     customIconUrl: "/meta-logo.svg",
     category: "paid",
     deliverables: [
-      "Creative Ad Hook Testing & Video Angle Matrix",
-      "Custom & Lookalike Audience Modeling",
-      "Omni-Channel Retargeting Funnel Design",
-      "CBO / ABO Budget Allocation Testing",
-      "Meta Conversions API (CAPI) Server Tracking"
+      "Creative Ad Hook Testing & Dynamic Video Angle Matrix",
+      "Custom, Lookalike & First-Party Audience Modeling",
+      "Full-Funnel Omni-Channel Retargeting Architecture",
+      "CBO / ABO Scale Budget Allocation & Bid Cap Testing",
+      "Meta Conversions API (CAPI) Server-Side Tracking"
     ],
     metrics: "5.4x Average Return on Ad Spend across E-Commerce",
     caseHighlight: "Scaled direct-to-consumer brand from $15k/mo to $140k/mo ad spend profitably."
   },
   {
     id: "wordpress",
-    title: "WordPress & Web Dev",
-    shortDesc: "We build fast, responsive and SEO-friendly WordPress websites that convert visitors into customers.",
-    fullDesc: "Modern, blazing-fast, mobile-first websites and landing pages engineered specifically for high conversion rates, seamless user experience, and lightning-speed Google PageSpeed scores.",
+    title: "WordPress & Web Development",
+    shortDesc: "High-speed, conversion-focused WordPress websites and landing pages engineered for lightning load times and lead capture.",
+    fullDesc: "Modern, blazing-fast, mobile-first websites and landing pages engineered specifically for high conversion rates, seamless user experience, and lightning-speed Google PageSpeed scores that turn cold clicks into paying clients.",
     iconName: "Globe",
     iconBg: "bg-teal-50/80",
     iconColor: "text-teal-700",
@@ -102,19 +102,19 @@ export const SERVICES_DATA: ServiceItem[] = [
     customIconUrl: "/web-dev-illustration.svg",
     category: "web",
     deliverables: [
-      "Custom Tailored UI/UX & Responsive Layouts",
-      "Sub-1-Second Load Times (95+ PageSpeed Scores)",
-      "Built-in Conversion Funnels & Heatmap Integration",
-      "Full On-Page SEO Architecture & Schema Markup",
-      "Easy CMS Backend & Security Hardening"
+      "Custom Tailored UI/UX & High-Converting Responsive Layouts",
+      "Sub-1-Second Load Times (95+ Google PageSpeed Scores)",
+      "Built-in Conversion Funnels, Heatmap Tracking & CRM Integration",
+      "Full On-Page Semantic SEO Architecture & Schema.org Markup",
+      "Enterprise CMS Backend, Speed Optimization & Security Hardening"
     ],
     metrics: "+42% Average Lift in Visitor-to-Lead Conversion Rate",
-    caseHighlight: "Redesigned enterprise legal portal resulting in 185% increase in form submissions."
+    caseHighlight: "Redesigned enterprise B2B portal resulting in 185% increase in inbound form submissions."
   },
   {
     id: "blogs",
-    title: "Video Editing",
-    shortDesc: "High-retention video editing, Reels, TikToks & YouTube cuts engineered to boost engagement and conversions.",
+    title: "High-Retention Video Editing",
+    shortDesc: "Viral short-form Reels, TikToks, YouTube Shorts, and high-converting video ads engineered to maximize retention and clicks.",
     fullDesc: "Professional video editing for ambitious brands, creators, and advertisers. From viral short-form hooks (Reels, TikTok, Shorts) to high-production YouTube videos, VSLs, and dynamic ad creatives designed to maximize watch time and conversion rates.",
     iconName: "Video",
     iconBg: "bg-indigo-50/90",
@@ -123,9 +123,9 @@ export const SERVICES_DATA: ServiceItem[] = [
     customIconUrl: "/video-editing-illustration.svg",
     category: "creative",
     deliverables: [
-      "Short-Form Viral Reels, TikToks & YouTube Shorts",
-      "High-Retention Sound Design, SFX & Motion Graphics",
-      "Dynamic Subtitles, Captions & Visual Hook Editing",
+      "Short-Form Viral Reels, TikToks & YouTube Shorts Editing",
+      "High-Retention Sound Design, SFX & Motion Graphic Hooks",
+      "Dynamic Subtitles, Captions & Fast-Paced Visual Storytelling",
       "YouTube Long-Form Videos & Podcast Multi-Cam Cuts",
       "High-Converting Video Ads & VSL (Video Sales Letters)"
     ],
@@ -134,19 +134,19 @@ export const SERVICES_DATA: ServiceItem[] = [
   },
   {
     id: "content-creator",
-    title: "Graphic Designing",
-    shortDesc: "High-impact visual identity, brand graphics, social media posts & ad creatives that captivate your audience.",
-    fullDesc: "Comprehensive graphic design services for modern brands. From brand identity systems, logos, and marketing collateral to high-converting social media creatives, ad banners, and promotional artwork that elevate your visual presence.",
+    title: "Graphic Designing & Creatives",
+    shortDesc: "High-impact visual identity, social media creatives, ad banners, and marketing collateral designed to maximize CTR.",
+    fullDesc: "Comprehensive graphic design services for modern brands. From brand identity systems, logos, and marketing collateral to high-converting social media creatives, performance ad banners, and promotional artwork that elevate your visual presence.",
     iconName: "PenTool",
     iconBg: "bg-orange-100",
     iconColor: "text-orange-600",
     accentColor: "#ea580c",
     category: "creative",
     deliverables: [
-      "Brand Identity, Logo Design & Style Guides",
-      "High-Converting Ad Creatives & Static Banners",
+      "Brand Identity Systems, Logo Design & Style Guidelines",
+      "High-Converting Performance Ad Creatives & Static Banners",
       "Social Media Post Templates & Carousel Designs",
-      "Marketing Collateral, Pitch Decks & Brochures",
+      "Marketing Collateral, Pitch Decks & Sales Brochures",
       "Infographics, Vector Illustrations & Print Media"
     ],
     metrics: "+68% Higher Click-Through Rates (CTR) on Visual Creatives",
@@ -155,8 +155,8 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "social-media",
     title: "Social Media Marketing",
-    shortDesc: "Build your brand, engage your target audience and grow your business across all major social platforms.",
-    fullDesc: "Holistic social media management across LinkedIn, Instagram, X (Twitter), and YouTube that builds an active, engaged community around your products and services.",
+    shortDesc: "Engage your target audience, build authentic community, and drive organic inbound demand across major social networks.",
+    fullDesc: "Holistic social media management across LinkedIn, Instagram, X (Twitter), and YouTube that builds an active, engaged community around your products and services, generating consistent inbound brand authority.",
     iconName: "Megaphone",
     iconBg: "bg-rose-50",
     iconColor: "text-rose-600",
@@ -164,9 +164,9 @@ export const SERVICES_DATA: ServiceItem[] = [
     customIconUrl: "/social-media-sphere.svg",
     category: "creative",
     deliverables: [
-      "Strategic Content Calendar & Grid Planning",
+      "Strategic Content Calendar & Grid Architecture",
       "Active Community Management & Direct Engagement",
-      "Influencer Outreach & Strategic Collaborations",
+      "Influencer Outreach & Strategic Industry Collaborations",
       "Cross-Platform Social Listening & Trend Jacking",
       "Monthly Growth Analytics & Audience Insights"
     ],
@@ -176,7 +176,7 @@ export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "cro-analytics",
     title: "Analytics & CRO",
-    shortDesc: "Maximize revenue per visitor with scientific conversion rate testing and multi-touch attribution.",
+    shortDesc: "Maximize revenue per visitor with scientific conversion rate optimization (CRO) and multi-touch GA4 attribution.",
     fullDesc: "We analyze user behavior, heatmaps, drop-off funnels, and checkout flows to remove friction points, systematically testing variations that double your revenue without spending extra on ads.",
     iconName: "BarChart3",
     iconBg: "bg-blue-50/90",
@@ -199,32 +199,32 @@ export const SERVICES_DATA: ServiceItem[] = [
 export const WHY_CHOOSE_US = [
   {
     id: "certified-experts",
-    title: "Certified Experts",
-    description: "Our team of certified professionals deliver top quality results backed by Google Partner & Meta Certified status.",
+    title: "Certified Google & Meta Ad Experts",
+    description: "Our team of Google Premier and Meta Certified growth specialists build data-driven campaigns backed by over 7 years of performance marketing experience scaling leading brands.",
     iconName: "UserCheck",
     color: "text-blue-600",
     bg: "bg-blue-50"
   },
   {
     id: "roi-focused",
-    title: "ROI Focused",
-    description: "We focus on strategies that deliver maximum return on investment. Every dollar spent is strictly tracked to revenue.",
+    title: "ROAS & Pipeline-Focused Execution",
+    description: "We eliminate vanity metrics like clicks and impressions. Every rupee spent is tied directly to qualified B2B lead generation, e-commerce ROAS, and bottom-line revenue.",
     iconName: "Target",
     color: "text-purple-600",
     bg: "bg-purple-50"
   },
   {
     id: "transparent-reporting",
-    title: "Transparent Reporting",
-    description: "Get clear reports and real-time updates on campaign performance with 24/7 client dashboards and zero hidden metrics.",
+    title: "Transparent Live Reporting Dashboards",
+    description: "Get 24/7 access to live Looker Studio dashboards tracking blended CAC, keyword rankings, conversion rate lifts, and ad attribution with zero hidden markups.",
     iconName: "FileSpreadsheet",
     color: "text-emerald-600",
     bg: "bg-emerald-50"
   },
   {
     id: "dedicated-support",
-    title: "Dedicated Support",
-    description: "We provide 24/7 support and a dedicated account manager with direct Slack and WhatsApp communication channels.",
+    title: "Dedicated Senior Growth Strategists",
+    description: "Work directly with dedicated senior campaign strategists via private Slack and WhatsApp channels for fast turnaround times, bi-weekly reviews, and proactive scaling.",
     iconName: "Headphones",
     color: "text-amber-600",
     bg: "bg-amber-50"
@@ -403,28 +403,28 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const FAQS: FaqItem[] = [
   {
-    question: "How quickly can I expect to see results from digital marketing?",
-    answer: "For Paid Ads (Google Ads & Meta Ads), you will start seeing traffic and inbound leads within the first 48 to 72 hours of launch. For SEO and Content Marketing, substantial organic ranking increases and compounding traffic growth typically begin showing significant momentum within 60 to 90 days.",
+    question: "How quickly can I expect to see results from digital marketing campaigns?",
+    answer: "For Paid Ads (Google Ads & Meta Ads), you will start seeing targeted traffic and inbound leads within the first 48 to 72 hours of campaign launch. For SEO and Organic Content Marketing, substantial keyword ranking increases on Google and compounding organic traffic growth typically gain strong momentum within 60 to 90 days.",
     category: "Timelines"
   },
   {
     question: "Do you require long-term lock-in contracts?",
-    answer: "No! We believe in earning your partnership every single month. While we recommend a 3-month initial runway to allow strategies to optimize and scale, all our retainer agreements operate on transparent month-to-month terms with a simple 30-day notice.",
+    answer: "No! We believe in earning your partnership every single month. While we recommend a 3-month initial runway to allow algorithms to optimize and scale, all our retainer agreements operate on transparent month-to-month terms with a simple 30-day notice.",
     category: "Agreements"
   },
   {
-    question: "How will I track my campaign performance and ROI?",
+    question: "How will I track my campaign performance, ROAS, and ROI?",
     answer: "You receive access to a private, 24/7 live Looker Studio reporting dashboard integrated with your Google Ads, Meta Ads, and GA4 accounts. In addition, your dedicated account strategist provides weekly executive video updates and bi-weekly strategic review calls.",
     category: "Reporting"
   },
   {
-    question: "What makes MarketingGuys different from other marketing agencies?",
-    answer: "Unlike traditional agencies that focus on vanity metrics like 'impressions' or 'clicks', MarketingGuys combines cutting-edge AI workflows with senior performance marketers. We handle everything under one roof—from high-retention video production and graphic design to high-converting paid ads and CRO—delivering qualified leads, measurable ROI, transparent real-time reporting, and zero junior hand-offs.",
+    question: "What makes Marketing Guys different from other digital marketing agencies?",
+    answer: "Unlike traditional agencies that focus on vanity metrics like impressions or clicks, Marketing Guys combines quantitative performance marketing with in-house creative production. We handle everything under one roof—from high-retention video editing and graphic design to high-converting Google & Meta Ads, technical SEO, and CRO—delivering qualified leads and measurable ROAS with zero junior hand-offs.",
     category: "Company"
   },
   {
     question: "What is the minimum recommended monthly ad budget?",
-    answer: "We typically work with businesses investing anywhere from ₹25,000/month to ₹100,000+/month in ad spend. We tailor campaign pacing and audience testing matrices to match your growth targets and unit economics.",
+    answer: "We typically work with businesses investing anywhere from ₹25,000/month to ₹1,00,000+/month in paid ad spend. We tailor campaign pacing, audience testing matrices, and negative keyword sculpting to match your exact growth targets and unit economics.",
     category: "Budget"
   }
 ];

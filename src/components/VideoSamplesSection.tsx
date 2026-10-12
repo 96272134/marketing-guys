@@ -115,11 +115,11 @@ export const VideoSamplesSection: React.FC = () => {
             <span>High-Retention Creative</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading mb-2">
-            Video Samples
+            High-Retention Video Editing & Viral Social Ad Samples
           </h2>
           <div className="w-14 h-1 bg-blue-600 mx-auto rounded-full mb-3"></div>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Check out our high-retention video edits, reels, and creative campaign samples designed to hook attention and drive conversions.
+           Check out our high-retention video edits, Instagram Reels and YouTube Shorts designed to hook viewer attention in the first 3 seconds and drive scalable ad conversions.
           </p>
         </div>
       </div>

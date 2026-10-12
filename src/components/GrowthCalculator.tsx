@@ -34,10 +34,10 @@ export const GrowthCalculator: React.FC<GrowthCalculatorProps> = ({ onOpenConsul
             <span>Interactive Growth Estimator</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading mb-4">
-            Calculate Your Projected Marketing ROI
+            Calculate Your Projected ROAS & Marketing ROI
           </h2>
           <p className="text-slate-600 text-base sm:text-lg">
-            See how much revenue and inbound lead pipeline our tailored digital marketing frameworks can unlock for your brand.
+            Estimate the revenue and qualified inbound B2B lead pipeline our performance marketing agency can generate for your ad spend.
           </p>
         </div>
 

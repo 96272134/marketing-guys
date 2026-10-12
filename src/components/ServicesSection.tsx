@@ -64,14 +64,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         {/* Section Header matching the reference */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">
-            OUR SERVICES
+            CORE PERFORMANCE CAPABILITIES
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading mb-4">
-            Complete Digital Marketing Solutions
+            Full-Funnel Digital Marketing & Growth Services
           </h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
           <p className="text-slate-600 text-base sm:text-lg">
-            High-performance growth channels combined to build predictable, scalable lead acquisition engines for your business.
+            From technical SEO audits and Google Ads management to Meta Ads ROAS scaling, WordPress web development, and high-retention video creative, we build predictable lead engines for ambitious brands.
           </p>
 
           {/* Filter tabs */}
@@ -113,7 +113,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                   {service.customIconUrl ? (
                     <img 
                       src={service.customIconUrl} 
-                      alt={service.title}
+                      alt={`${service.title} - Marketing Guys Performance Digital Marketing Solution`}
                       className="w-full h-full object-contain drop-shadow-sm" 
                     />
                   ) : (
@@ -121,21 +121,21 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                   )}
                 </div>
 
-                {/* Service Title */}
+                {/* Service Title - Semantic H3 */}
                 <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-heading mb-2.5 group-hover:text-blue-600 transition-colors">
                   {service.title}
                 </h3>
 
-                {/* Service Short Description */}
+                {/* Service Short Description with high-intent keywords */}
                 <p className="text-slate-600 text-sm leading-relaxed mb-4">
                   {service.shortDesc}
                 </p>
               </div>
 
-              {/* Action Link: "Learn More ->" */}
+              {/* Action Link: Deliverable-focused anchor copy */}
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto">
                 <span className="text-sm font-bold text-blue-600 group-hover:text-blue-700 flex items-center gap-1.5">
-                  <span>Learn More</span>
+                  <span>Explore Deliverables</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
                 </span>
                 <span className="text-[11px] font-semibold text-slate-400 bg-slate-50 px-2 py-0.5 rounded-md">

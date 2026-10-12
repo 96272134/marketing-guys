@@ -53,21 +53,21 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
           {/* Left Column: Heading, Description & Button */}
           <div className="lg:col-span-5 space-y-6 text-center md:text-left px-2 sm:px-4 md:px-0">
             <div className="inline-block text-xs font-bold uppercase tracking-widest text-blue-600">
-              WHY CHOOSE US
+              TRUSTED PERFORMANCE GROWTH PARTNER
             </div>
             
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight font-heading">
-              We Deliver Results That Drive Your Business Growth
+              Why Partner With Our Performance Marketing Agency
             </h2>
 
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-              We use data, creativity and strategy to grow your brand and maximize your ROI. Every campaign is meticulously planned, monitored, and scaled with a scientific approach.
+              We combine quantitative analytics, high-converting creative ad hooks, and full-funnel search marketing to engineer predictable, profitable customer acquisition. Every rupee invested is measured against pipeline velocity and revenue.
             </p>
 
             <div className="space-y-3 pt-2 text-left max-w-md mx-auto md:mx-0">
               <div className="flex items-start sm:items-center gap-3 text-slate-800 text-sm font-medium">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5 sm:mt-0" />
-                <span>Zero vanity metrics — 100% focused on pipeline & revenue</span>
+                <span>Zero vanity metrics — 100% focused on B2B lead generation & ROAS</span>
               </div>
               <div className="flex items-start sm:items-center gap-3 text-slate-800 text-sm font-medium">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5 sm:mt-0" />
@@ -75,7 +75,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
               </div>
               <div className="flex items-start sm:items-center gap-3 text-slate-800 text-sm font-medium">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5 sm:mt-0" />
-                <span>Direct access to Senior Strategists on dedicated Slack channels</span>
+                <span>Direct Slack/WhatsApp access to Senior Google & Meta Certified Strategists</span>
               </div>
             </div>
 
@@ -85,7 +85,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
                 onClick={onOpenAboutModal}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200 inline-flex items-center gap-3 cursor-pointer group"
               >
-                <span>Know More About Us</span>
+                <span>Know More About Our Agency</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>

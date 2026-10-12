@@ -13,10 +13,10 @@ export const TestimonialsFAQ: React.FC = () => {
         <div className="mb-20">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <div className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">
-              CLIENT TESTIMONIALS
+              CLIENT TESTIMONIALS & CASE RESULTS
             </div>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading mb-4">
-              Trusted by 500+ High-Growth Companies
+              Trusted by 500+ High-Growth E-Commerce & B2B Brands
             </h2>
             <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-4"></div>
           </div>
@@ -48,7 +48,7 @@ export const TestimonialsFAQ: React.FC = () => {
                   <div className="w-11 h-11 rounded-full overflow-hidden border-2 border-blue-500/20 bg-white flex items-center justify-center shrink-0 shadow-xs">
                     <img 
                       src={test.avatar} 
-                      alt={test.name} 
+                      alt={`${test.name} - Verified Client Review for Marketing Guys Agency`}
                       className={`w-full h-full ${test.avatar.includes('mytravel') || test.avatar.includes('travel') ? 'object-contain p-0.5 bg-white' : 'object-cover'}`}
                       onError={(e) => {
                         if (test.avatar.includes('mytravel')) {
@@ -82,7 +82,7 @@ export const TestimonialsFAQ: React.FC = () => {
               <span>Got Questions?</span>
             </div>
             <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading">
-              Frequently Asked Questions
+              Frequently Asked Questions About Our Digital Marketing Agency
             </h3>
           </div>
 

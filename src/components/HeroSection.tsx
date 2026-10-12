@@ -56,18 +56,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Eyebrow badge matching reference */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/80 text-blue-700 text-xs font-bold uppercase tracking-wider shadow-xs">
               <span className="w-2 h-2 rounded-full bg-blue-600 animate-ping"></span>
-              <span>RESULT DRIVEN DIGITAL MARKETING AGENCY</span>
+              <span>PREMIER PERFORMANCE MARKETING AGENCY</span>
             </div>
 
-            {/* Main Headline with Highlighted text */}
+            {/* Main Headline with Highlighted text (Single clean H1 for SEO) */}
             <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] font-heading">
-              We Grow Your Business <br className="hidden sm:block" />
-              With <span className="text-blue-600">Digital Marketing</span>
+              Scale Revenue With The Best <br className="hidden sm:block" />
+              <span className="text-blue-600">Performance Marketing Agency</span> For High-Growth Brands
             </h1>
 
-            {/* Subheadline */}
+            {/* Subheadline with high-intent keywords */}
             <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
-               We help businesses increase visibility, generate quality leads and maximize ROI with AI-powered, result-driven digital marketing strategies.
+              We engineer high-converting Google Ads, Meta Ads ROAS campaigns, and full-funnel search marketing for e-commerce brands, B2B companies, and fast-growing businesses seeking predictable, scalable lead engines.
             </p>
 
             {/* Dual CTA Buttons */}
@@ -77,7 +77,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 onClick={onOpenConsultation}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-base px-7 py-3.5 rounded-xl shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 transition-all duration-200 flex items-center gap-3 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span>Get a Free Consultation</span>
+                <span>Claim Free Growth Audit</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
 
@@ -88,7 +88,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               >
                 <img 
                   src="/whatsapp-logo.svg" 
-                  alt="WhatsApp" 
+                  alt="Chat with Marketing Guys Performance Marketing Team on WhatsApp" 
                   className="w-6 h-6 object-contain group-hover:scale-110 transition-transform" 
                 />
                 <span>WhatsApp Us</span>
@@ -99,7 +99,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="pt-6 border-t border-slate-200/80 grid grid-cols-2 sm:grid-cols-4 gap-4">
               <div className="flex items-center gap-2 text-slate-700 text-xs sm:text-sm font-medium">
                 <Target className="w-4 h-4 text-blue-600 shrink-0" />
-                <span>ROI Focused</span>
+                <span>Maximized ROAS</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700 text-xs sm:text-sm font-medium">
                 <FileCheck2 className="w-4 h-4 text-blue-600 shrink-0" />
@@ -107,7 +107,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               </div>
               <div className="flex items-center gap-2 text-slate-700 text-xs sm:text-sm font-medium">
                 <TrendingUp className="w-4 h-4 text-blue-600 shrink-0" />
-                <span>Result Oriented</span>
+                <span>B2B Lead Generation</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700 text-xs sm:text-sm font-medium">
                 <Headphones className="w-4 h-4 text-blue-600 shrink-0" />
@@ -125,13 +125,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Floating Orbital 3D/Glass Badges */}
             
-            {/* Badge 1: SEO Circle badge (Top Left) */}
+            {/* Badge 1: Local SEO badge (Top Left) */}
             <div className="absolute -top-4 left-4 sm:-left-6 z-20 bg-white/95 backdrop-blur-md rounded-2xl p-3 shadow-xl border border-slate-100 flex items-center gap-3 animate-float">
               <div className="w-11 h-11 rounded-xl bg-emerald-500 flex items-center justify-center text-white shadow-md shadow-emerald-500/20 font-black text-sm">
                 <Search className="w-5 h-5 text-white" />
               </div>
               <div className="pr-2">
-                <div className="text-xs font-bold text-slate-900">SEO Ranking</div>
+                <div className="text-xs font-bold text-slate-900">Search Engine Domination</div>
                 <div className="text-[11px] font-semibold text-emerald-600 flex items-center gap-1">
                   <span>#1 on Google</span>
                   <span className="text-[9px] bg-emerald-100 px-1 rounded font-bold">+280%</span>
@@ -149,7 +149,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 </div>
               </div>
               <div className="text-left">
-                <div className="text-xs font-bold text-slate-800">Google Ads</div>
+                <div className="text-xs font-bold text-slate-800">Google Ads Management</div>
                 <div className="text-[10px] text-slate-500 font-medium">5.8x Avg ROAS</div>
               </div>
             </div>
@@ -160,7 +160,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="text-base font-extrabold tracking-tighter">∞</ span>
               </div>
               <div className="text-left pr-1">
-                <div className="text-xs font-bold text-slate-900">Meta Ads</div>
+                <div className="text-xs font-bold text-slate-900">Meta Ads ROAS</div>
                 <div className="text-[11px] font-semibold text-blue-600">High-Converting</div>
               </div>
             </div>
@@ -171,7 +171,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <Zap className="w-6 h-6 fill-amber-300 text-amber-300" />
               </div>
               <div>
-                <div className="text-xs font-bold text-slate-900">Leads Inflow</div>
+                <div className="text-xs font-bold text-slate-900">B2B Lead Generation</div>
                 <div className="text-[11px] font-bold text-emerald-600 flex items-center gap-1">
                   <span>+1,420 Qualified</span>
                   <span className="text-[9px] text-slate-400">/mo</span>
@@ -185,7 +185,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <BarChart3 className="w-4 h-4" />
               </div>
               <div className="text-left">
-                <div className="text-[11px] font-bold text-slate-800">ROI Growth</div>
+                <div className="text-[11px] font-bold text-slate-800">Performance ROI</div>
                 <div className="text-[10px] text-emerald-600 font-bold">▲ 340% Lift</div>
               </div>
             </div>

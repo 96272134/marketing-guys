@@ -100,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({
                   )
                 },
                 { 
-                  name: 'Instagram (@marketingguysagencynoida)', 
+                  name: 'Instagram (@marketingguys.agency)', 
                   url: AGENCY_INFO.socials.instagram,
                   id: 'footer-instagram-link',
                   icon: (
@@ -220,6 +220,8 @@ export const Footer: React.FC<FooterProps> = ({
                   <button 
                     onClick={onOpenAdmin} 
                     className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1.5 font-medium"
+                    rel="nofollow noindex"
+                    aria-label="Admin Portal Login"
                   >
                     <Lock className="w-3.5 h-3.5" />
                     <span>{slotLocked ? 'Admin Login' : 'Admin Sign-Up (Claim Slot)'}</span>

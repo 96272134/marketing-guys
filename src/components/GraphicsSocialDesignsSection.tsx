@@ -138,11 +138,11 @@ export const GraphicsSocialDesignsSection: React.FC = () => {
             <span>Creative & Social Assets</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-heading mb-3">
-            Graphics & Social Designs
+           High-Converting Social Media Creatives & Brand Graphic Design
           </h2>
           <div className="w-14 h-1 bg-blue-600 mx-auto rounded-full mb-4"></div>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            High-converting social media creatives, promotional ad banners, and brand aesthetics engineered to turn viewers into loyal buyers.
+            High-converting social media creatives, promotional ad banners, and visual brand aesthetics engineered to maximize click-through rate (CTR) and turn viewers into loyal buyers.
           </p>
         </div>
 
